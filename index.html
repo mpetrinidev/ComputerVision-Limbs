@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Computer Vision - Limbs</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Computer Vision - Limbs</title>
 
-  <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-  <img id="image" src="images/3dce8f006b90431c8b1394a00a6fb9bc.jpg"/>
-  <canvas id="cphoto"></canvas>
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <img id="image" src="images/4cf25f8142de441688438cfe1e475f91.jpg" />
+    <canvas id="cphoto"></canvas>
 
-  <label>
-    A:
-    <input type="number" readonly value="0" step="0.01" name="@Html.NameFor(x => Model.Sizes.A)" id="printmed0"/>
-</label>
-<br/>
-<label>
-    B:
-    <input type="number" readonly value="0" step="0.01" name="@Html.NameFor(x => Model.Sizes.B)" id="printmed1"/>
-</label>
-<br />
+    <label>
+      A:
+      <input
+        type="number"
+        readonly
+        value="0"
+        step="0.01"
+        name="@Html.NameFor(x => Model.Sizes.A)"
+        id="printmed0"
+      />
+    </label>
+    <br />
+    <label>
+      B:
+      <input
+        type="number"
+        readonly
+        value="0"
+        step="0.01"
+        name="@Html.NameFor(x => Model.Sizes.B)"
+        id="printmed1"
+      />
+    </label>
+    <br />
 
-<label>
-    C:
-    <input type="number" readonly value="0" step="0.01" name="@Html.NameFor(x => Model.Sizes.C)" id="printmed2"/>
-</label>
-</body>
-<script src="scripts/tracking-min.js"></script>
-<script src="scripts/main.js"></script>
+    <label>
+      C:
+      <input
+        type="number"
+        readonly
+        value="0"
+        step="0.01"
+        name="@Html.NameFor(x => Model.Sizes.C)"
+        id="printmed2"
+      />
+    </label>
+  </body>
+  <script src="scripts/tracking-min.js"></script>
+  <script src="scripts/main.js"></script>
 </html>
